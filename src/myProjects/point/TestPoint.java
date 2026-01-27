@@ -72,7 +72,7 @@ public class TestPoint {
 				if (j == i)
 					continue;
 				System.out.format(".(%d,%d) to .(%d,%d) -> %.3f\n", allPoints[i].getX(), allPoints[i].getY(),
-						allPoints[j].getX(), allPoints[j].getY(), allPoints[i].calculateDistanceTo(allPoints[j]));
+						allPoints[j].getX(), allPoints[j].getY(), allPoints[i].calculate(allPoints[j]));
 			}
 		}
 	}
@@ -80,7 +80,7 @@ public class TestPoint {
 	public static void printDistanceToOrigin(Point... allPoints) {
 		for (int i = 0; i < allPoints.length; ++i)
 			System.out.format("[%d] -> .(%d,%d) to .(%d,%d) -> %.3f\n", (i + 1), allPoints[i].getX(),
-					allPoints[i].getY(), 0, 0, allPoints[i].calculateDistanceToOrigin());
+					allPoints[i].getY(), 0, 0, allPoints[i].calculate());
 	}
 
 	public static void printAllPoints(Point... allPoints) {

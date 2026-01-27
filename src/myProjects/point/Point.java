@@ -41,22 +41,22 @@ public class Point {
 		this.y = y;
 	}
 
-	// calculateDistanceToOrigin(): double
+	// calculate(): double
 	// this method calculates and returns the distance of ‘point’ from origin
-	public double calculateDistanceToOrigin() {
+	public double calculate() {
 		return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
 	}
 
-	// calculateDistanceTo(Point point): double
+	// calculate(Point point): double
 	// this method calculates and returns the distance of 'point' from 'another
 	// point'
-	public double calculateDistanceTo(Point point) {
+	public double calculate(Point point) {
 		return Math.sqrt(Math.pow(point.x - x, 2) + Math.pow(point.y - y, 2));
 	}
 
-	// calculateDistanceTo(int valueX, int valueY)
+	// calculate(int valueX, int valueY)
 	// this method calculates and returns the distance of 'point' from given values
-	public double calculateDistanceTo(int valueX, int valueY) {
+	public double calculate(int valueX, int valueY) {
 		return Math.sqrt(Math.pow(valueX - x, 2) + Math.pow(valueY - y, 2));
 	}
 
