@@ -24,14 +24,12 @@ public class Point {
 	// +Point() - default constructor
 	public Point() {
 		this(0, 0);
-		++pointCount;
 	}
 
 	// +Point(Point other)
 	// to copy the created point object to the new point to be created
 	public Point(Point other) {
 		this(other.getX(), other.getY());
-		++pointCount;
 	}
 
 	// +Point(x: int, y: int)
